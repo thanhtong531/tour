@@ -29,6 +29,43 @@ body{
     color:var(--primary-color);
 }
 
+.grid{
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.grid-col-2{
+    width: 16.667%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid-col-2-4{
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 20%;
+}
+.grid-col-8{
+    width: 66.667%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.grid-col-10{
+    width: 83.334%;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
 
 
 .text-center {
@@ -59,7 +96,7 @@ body{
 /* Navbar */
 #navbar{
     width: 100%;
-    height: 40px;
+    height: 46px;
     background-color: var(--third-color);
     position: relative;
 }
@@ -69,7 +106,7 @@ body{
     font-size: 15px;
     position: absolute;
     right: 0;
-    line-height: 40px;
+    line-height: 46px;
 }
 
 
@@ -90,9 +127,58 @@ body{
     
 }
 .navbar-cart{
-    margin: 0 25px;
+    margin: 0 30px;
     position: relative;
     font-size: 20px;
+    cursor: pointer;
+}
+.cart-empty::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid #fff;
+  top: -13px;
+  right: 36px;
+}
+.navbar-cart:hover .cart-empty{
+    display: block;
+}
+
+.cart-empty--when{
+    display: none;
+}
+
+.cart-empty{
+    display: none;
+    position: absolute;
+    width:300px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    left: -241px;
+    text-align: center;
+    border-radius: 10px;
+}
+.cart-empty-icon{
+    padding-top: 10px;
+    font-size: 30px;
+    color:var(--secondary-color);
+}
+
+
+.number-cart
+{
+    left: 18px;
+    top: 2px;
+    position: absolute;
+    font-size: 13px;
+    padding: 2px 8px;
+    background-color:var(--primary-color);
+    color:var(--white-color);
+    line-height: 1.2rem;
+    border-radius: 10px;
 }
 
 
@@ -107,8 +193,8 @@ body{
     background-color: var(--gray-color);
     height: 20px;
     position: absolute;
-    left: 200%;
-    top: 20%;
+    left: 50px;
+    top: 25%;
     }
 .navbar-cart::before{
         content: "";
@@ -116,8 +202,8 @@ body{
         background-color:var(--gray-color);
         height: 20px;
         position: absolute;
-        right: 200%;
-        top: 20%;
+        right: 45px;
+        top: 25%;
 }
 
 
@@ -197,4 +283,116 @@ body{
 .info-desc{
     margin-top: 20px;
     font-size: 20px;
+}
+
+/* Tour List */
+#tour-list{
+    padding: 64px 0;
+}
+
+#tour-list .tour-item  img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 4px 4px 5px #ccc;
+    opacity: 0.8;
+}
+
+#tour-list .tour-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+}
+#tour-list .tour-item {
+    position: relative;
+
+}
+
+#tour-list .tour-item .tour-desc{
+    padding-left: 20px;
+    padding-top: 40px;
+    width: 243px;
+    position: absolute;
+    bottom: 4px;
+    
+    color:#fff;
+    height: 120px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.01),#1b1b1b);
+}
+.tour-desc .tour-content{
+    font-size: 16px;
+}
+.tour-desc > p {
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Places */
+
+#places-list{
+    padding-bottom: 34px;
+}
+
+#places .places-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#places .places-info p{
+    margin-top: 10px;
+}
+#places .places-info .places-introduce{
+    letter-spacing: 2px;
+}
+
+.places-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.places-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 2px 4px 3px #ccc;
+
+}
+
+.places-desc{
+    /* padding-left: 70px; */
+    /* padding-top: 70px; */
+    width: 245px;
+    position: absolute;
+    bottom: 4px;
+    color:#fff;
+    height: 120px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.01),#1b1b1b);
+    
+}
+
+.places-item .places-name {
+    color:var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px ;
+    padding-top: 50px;
+    display: none;
+    animation: FadeLeft ease .4s;
+}
+
+@keyframes FadeLeft{
+    from{
+        text-align: left;
+    }
+    to{
+        text-align: center;
+    }
+}
+
+.places-item:hover .places-name {
+    display: block;
 }
