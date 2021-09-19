@@ -286,6 +286,9 @@ body{
 .menu-list li:hover a {
     color:var(--primary-color);
 }
+.header-logo--name{
+    color:var(--secondary-color);
+}
 .header-logo--name span{
     color:var(--primary-color);
 }
