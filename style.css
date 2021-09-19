@@ -261,6 +261,7 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
+    color:var(--secondary-color);
 }
 .header-logo  a:hover{
     color:var(--secondary-color);
