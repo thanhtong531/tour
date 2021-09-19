@@ -13,55 +13,51 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Navbar -->
         <nav id="navbar">
             <div class="navbar-right">
                 <div class="navbar-search">
                 <input class="navbar-search--input" type="text" placeholder="Tour du lịch điểm đến...">
                 <i class="fas fa-search"></i>
                 </div>
-                <div class="navbar-cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="number-cart">3</span>
-                    <div class="cart-empty">
-                        <div class="cart-empty--when">
-                            <div class="cart-empty-icon">
-                                <i class="fas fa-shopping-bag"></i>
-                            </div>
-                            <p>Giỏ hàng rỗng</p>
+                
+                <div class="navbar-notifi" onclick="myFuncNotifi()">
+                    <i class="notify-icon far fa-bell"></i>
 
-                        </div>
-
-                    <h4>Hàng đã thêm</h4>
-                    <ul class="tour-cart-list">
-                        <li class="tour-cart-item">
-                            <img src="" alt="">
-
-                            <div class="cart-item-info">
-
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="navbar-notifi-empty" >
+                        <img src="https://scontent.fvca1-3.fna.fbcdn.net/v/t1.15752-9/242304083_387988182988459_7096453524380742852_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=ylRo-0K93_oAX_B3Wa4&tn=YfVv3aQscaQ7bfG6&_nc_ht=scontent.fvca1-3.fna&oh=87997bba5b8d71676be0d4ba7315b154&oe=616AF207" alt="">
+                        <p>Không có thông báo nào</p>
+                    </div>
                 </div>
-
-                </div>
-                <div class="navbar-user">
+            
+                <div class="navbar-user" onclick="myUser()">
                 <i class="fas fa-user"></i>
-                    Đăng nhập
-                </div>
+                     <i class="fas fa-caret-down"></i>
+                    <ul class="users">
+                        <li class="user"><a href="">Đăng nhập</a></li>
+                        <li class="user"><a href="">Đăng kí</a></li>
+                    </ul>
             </div>
+            </div>
+        </div>
+
         </nav>
             <div class="container">
                
                 <!-- Header -->
                 <header id="header">
                     <div class="header-logo">
-                        <img src="./src/img/logo.png" alt="">
-                        <h2 class="header-logo--name">Shy<span>Tour</span></h2>
-                    </div>
+                        <a href="#">
+
+                            <img src="./src/img/logo.png" alt="">
+                            <h2 class="header-logo--name">Shy<span>Tour</span></h2>
+                        </a>
+                        </div>
         
                         <ul class="menu-list">
                             <li><a href="">Trang chủ</a> </li>
                             <li><a href="">Tour</a> </li>
+                            <li><a href="">Khách sạn</a> </li>
                             <li><a href="">Khuyến mãi</a></li>
                             <li><a href="">Liên hệ</a> </li>
                         </ul>
@@ -169,5 +165,6 @@
         
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -126,32 +126,33 @@ body{
     opacity: 0.6;
     
 }
-.navbar-cart{
+.navbar-notifi{
     margin: 0 30px;
     position: relative;
     font-size: 20px;
     cursor: pointer;
 }
-.cart-empty::before{
+.navbar-notifi-empty::before{
     content: "";
     width: 0px;
     height: 0px;
     position: absolute;
     border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 12px solid #fff;
-  top: -13px;
-  right: 36px;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: -13px;
+    right: 40px;
 }
-.navbar-cart:hover .cart-empty{
+
+
+.navbar-notifi-empty img{
+    width: 100%;
+}
+.navbar-notifi-empty.open {
     display: block;
 }
 
-.cart-empty--when{
-    display: none;
-}
-
-.cart-empty{
+.navbar-notifi-empty{
     display: none;
     position: absolute;
     width:300px;
@@ -160,25 +161,7 @@ body{
     left: -241px;
     text-align: center;
     border-radius: 10px;
-}
-.cart-empty-icon{
-    padding-top: 10px;
-    font-size: 30px;
-    color:var(--secondary-color);
-}
-
-
-.number-cart
-{
-    left: 18px;
-    top: 2px;
-    position: absolute;
-    font-size: 13px;
-    padding: 2px 8px;
-    background-color:var(--primary-color);
-    color:var(--white-color);
-    line-height: 1.2rem;
-    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3),-4px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -187,22 +170,26 @@ body{
 
 
 
-.navbar-cart::after{
+
+
+
+
+.navbar-notifi::after{
     content: "";
     width: 2px;
     background-color: var(--gray-color);
     height: 20px;
     position: absolute;
-    left: 50px;
+    left: 40px;
     top: 25%;
     }
-.navbar-cart::before{
+.navbar-notifi::before{
         content: "";
         width: 2px;
         background-color:var(--gray-color);
         height: 20px;
         position: absolute;
-        right: 45px;
+        right: 40px;
         top: 25%;
 }
 
@@ -211,11 +198,49 @@ body{
     margin: 0 15px;
     font-size: 15px;
     cursor: pointer;
+    position: relative;
 }
 .navbar-user > i {
     font-size: 20px;
 }
+.users.open{
+    display: block;
+}
 
+.users{
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 200px;
+    right: 0;
+    padding: 10px;
+    display: none;
+    border-radius: 4px;
+}
+
+.users::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: -13px;
+    right: 0px;
+}
+
+.user:hover a {
+    color:#000;
+    background-color: #fff;
+}
+
+
+.user a{
+    border-radius: 4px;
+    display: block;
+    padding: 0 8px;
+    position: relative;
+}
 
 /* Header */
 
@@ -231,10 +256,14 @@ body{
     align-items: center;
 }
 
-.header-logo{
+.header-logo a{
     max-width: 40px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.header-logo  a:hover{
+    color:var(--secondary-color);
 }
 
 .header-logo img{
