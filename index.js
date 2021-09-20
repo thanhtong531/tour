@@ -5,18 +5,30 @@ const iconUser = document.querySelector('.navbar-user');
 const iconUserDropdown = document.querySelector('.users');
 
 
-function myFuncNotifi(){
 
-    notiFi.onclick = function (){
-        notiFi2.classList.toggle('open');
+
+notiFi.onclick = function(){
+    notiFi2.classList.toggle('open');
     }
-}
-
-function myUser(){
+    
     iconUser.onclick = function(){
         iconUserDropdown.classList.toggle('open');
     }
-}
+
+
+// Ẩn hiện từng thông báo
+        document.onclick = function(e){
+            if(e.target.parentNode != notiFi){
+                notiFi2.classList.remove('open');
+               
+
+            }else{
+                iconUserDropdown.classList.remove('open')
+            }
+            }
 
 
 
+
+
+   
