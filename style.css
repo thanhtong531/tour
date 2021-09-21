@@ -97,6 +97,8 @@ body{
     width: 33.33%;
 }
 
+
+
 hr{
     width: 60%;
     margin: 0 auto;
@@ -223,7 +225,7 @@ hr{
     position: absolute;
     background-color: var(--primary-color);
     width: 200px;
-    right: 0;
+    right: -3px;
     padding: 10px;
     display: none;
     border-radius: 4px;
@@ -613,4 +615,85 @@ hr{
 
 #footer {
     padding-bottom: 50px;
+}
+
+.contact-content{
+    font-size: 20px;
+    color:var(--primary-color);
+    font-weight: 500;
+}
+
+.contact-item {
+    font-size: 15px;
+    margin: 10px 0;
+    color:var(--secondary-color);
+}
+.contact-item i{
+    display: inline-block;
+    margin-right: 5px;
+    padding-top: 5px;
+    margin-left: 4px;
+}
+
+
+
+.information a {
+    display: block;
+    font-size: 15px;
+    color:var(--secondary-color);
+    margin-top: 10px;
+
+}
+.input{
+
+}
+
+.newletter {
+    margin-right: 4px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.input i {
+    background-color:var(--primary-color);
+    font-size: 15px;
+    line-height: -0.3;
+    margin-top: 14px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: -16px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.social-list{
+    margin-top: 10px;
+}
+.social-list a {
+    margin: 0 4px;
+    font-size: 25px;
+}
+
+.social-item--fb{
+    color:blue;
+}
+.social-item--insta{
+   color:purple;
+}
+.social-item--ytb{
+    color:red;
+
+}
+.social-item--twitter{
+    color:blue;
+
+}
+
+.design{
+    margin-top: 30px;
+    text-align: center;
+}
+.design a{
+    color:var(--primary-color);
+    cursor: pointer;
 }
