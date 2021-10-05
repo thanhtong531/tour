@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Shy Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="navbar-right">
+                <div class="navbar-search">
+                <input class="navbar-search--input" type="text" placeholder="Tour du lịch điểm đến...">
+                <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="navbar-notifi">
+                    <i class="notify-icon far fa-bell"></i>
+
+                    <div class="navbar-notifi-empty" >
+                        <img src="https://scontent.fvca1-3.fna.fbcdn.net/v/t1.15752-9/242304083_387988182988459_7096453524380742852_n.png?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=ylRo-0K93_oAX_B3Wa4&tn=YfVv3aQscaQ7bfG6&_nc_ht=scontent.fvca1-3.fna&oh=87997bba5b8d71676be0d4ba7315b154&oe=616AF207" alt="">
+                        <p>Không có thông báo nào</p>
+                    </div>
+                </div>
+            
+                <div class="navbar-user">
+                <i class="fas fa-user"></i>
+                     <i class="fas fa-caret-down"></i>
+                    <ul class="users">
+                        <li class="user"><a href="">Đăng nhập</a></li>
+                        <li class="user"><a href="">Đăng kí</a></li>
+                    </ul>
+            </div>
+            </div>
+            
+        </nav>
+            <div class="container">
+               
+                <!-- Header -->
+                <header id="header">
+                    <div class="header-logo">
+                        <a href="#">
+
+                            <img src="./src/img/logo.png" alt="">
+                            <h2 class="header-logo--name">Shy<span>Tour</span></h2>
+                        </a>
+                        </div>
+        
+                        <ul class="menu-list">
+                            <li><a href="">Trang chủ</a> </li>
+                            <li><a href="">Tour</a> </li>
+                            <li><a href="">Khách sạn</a> </li>
+                            <li><a href="">Khuyến mãi</a></li>
+                            <li><a href="">Liên hệ</a> </li>
+                        </ul>
+                </header>
+
+                <!-- Slider -->
+                <div id="slider">
+                    
+                </div>
+
+                <!-- Info list -->
+                <ul id="info-list" class="row">
+                    <li class="col col-4 info-item">
+                        <div class="info-comment--icon color-primary">
+                            <i class="far fa-comments"></i>
+                        </div>
+                        <p class="info-desc text-center">Hỗ trợ khách hàng 24/7</p>
+                    </li>
+                    <li class="col col-4 info-item">
+                        <div class="info-comment--icon color-primary">
+                            <i class="fas fa-coins"></i>
+                            </div>
+                        <p class="info-desc text-center">Giá tốt mỗi ngày</p>
+                    </li>
+                    <li class="col col-4 info-item">
+                        <div class="info-comment--icon color-primary">
+                            <i class="fas fa-money-check-alt"></i>
+                            </div>
+                        <p class="info-desc text-center">Thanh toán đa dạng</p>
+                    </li>
+                    <li class="col col-4 info-item">
+                        <div class="info-comment--icon color-primary">
+                            <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                        <p class="info-desc text-center">Còn rất nhiều nơi đẹp khác</p>
+                    </li>
+                    
+                </ul>
+
+
+                <!-- Tour List -->
+                <ul id="tour-list" class="row">
+                    <li class="col col-4 tour-item">
+                        <img src="https://media.travel.com.vn/Advertisings/bn_200506_DU-LICH-AN-TOAN-2.jpg" alt="">
+                    <div class="tour-desc">
+                        <h3 class="tour-content">Du Lịch An Toàn</h2>
+                        <p>Tiêu chí an toàn</p>
+                    </div>                          
+                    </li>
+                    <li class="col col-4 tour-item">
+                        <img src="https://media.travel.com.vn/Advertisings/bn_200506_KY-NGHI-GIA-DINH.jpg" alt="">
+                        <div class="tour-desc">
+                            <h3 class="tour-content">Vé máy bay/Xe + Khách sạn</h2>
+                            <p>Dịch vụ tự chọn dành riêng cho gia đình bạn</p>
+                        </div> 
+                    </li>
+                    <li class="col col-4 tour-item">
+                        <img src="https://media.travel.com.vn/Advertisings/bn_200506_TOUR-UU-DAI-KHUNG.jpg" alt="">
+                    <div class="tour-desc">
+                        <h3 class="tour-content">Dịch vụ khách sạn</h2>
+                        <p>Đừng bỏ lỡ giảm giá chưa từng có</p>
+                    </div>
+                        
+                    </li>
+                    <li class="col col-4 tour-item"><img src="https://media.travel.com.vn/Advertisings/bn_200506_VIETRAVEL-GIFT.jpg" alt="">
+                    <div class="tour-desc">
+                        <h3 class="tour-content">ShyTour gift</h2>
+                        <p>Phiếu quà tặng ShyTour</p>
+                    </div>
+                    </li>
+                </ul>
+
+
+            
+                <!-- Places list  -->
+                <div id="places">
+                    <div class="places-info">
+                        <h2 class="places-introduce">Điểm đến yêu thích</h2>
+                        <p>Các địa điểm du lịch trong nước</p>
+                    </div>
+
+                    <ul class="row" id="places-list">
+                        <li class="col col-4 places-item">
+                            <img src="https://source.unsplash.com/random" alt="" class="places-img">
+                            <div class="places-desc">
+                                <h4 class="places-name">Vịnh Hạ Long</h4>
+                            </div>
+                            <div class="places-favourite">
+                                <i class="ion-fireball"></i>Hot nhất
+                            </div> 
+                        </li>   
+                        <li class="col col-4 places-item">
+                            <img src="https://source.unsplash.com/random" alt="" class="places-img">
+                            <div class="places-desc">
+                                <h4 class="places-name">Sapa</h4>
+                            </div>  
+
+                            <div class="places-favourite">
+                                 <i class="ion-fireball"></i>Hot nhất
+                            </div>
+                                
+                        </li>
+                        <li class="col col-4 places-item">
+                            
+                            <img src="https://source.unsplash.com/random" alt="" class="places-img">
+                            <div class="places-desc">
+                                <h4 class="places-name">Đà Nẵng</h4>
+                            </div>   
+                            <div class="places-favourite">
+                                <i class="ion-fireball"></i>Hot nhất
+
+                            </div>
+
+                        </li>
+                        <li class="col col-4 places-item">
+                            <img src="https://source.unsplash.com/random" alt="" class="places-img">
+                            <div class="places-desc">
+                                <h4 class="places-name">Qui Nhơn</h4>
+
+                            </div>    
+                            <div class="places-favourite">
+                                 <i class="ion-fireball"></i>Hot nhất
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+                <!-- Hotel  -->
+                
+                <div class="places-info">
+                    <h2 class="places-introduce">Khách sạn được đề xuất</h2>
+                    <p>Giá tốt chỉ có trên ShyTour</p>
+                </div>
+                
+                <ul class="row" id="hotel-list">
+                    <li class="hotel-item col col-4">
+                        <img src="https://tripi.vn/cdn-cgi/image/width=320/https://storage.googleapis.com/hms_prod/photo/thumb/1616919860706qw/1-0a75c811-715b-4c53-9371-66103da1654c.png" alt="" class="hotel-img">
+                        <div class="hotel-icon">
+                            <img src="https://storage.googleapis.com/tripi-assets/mytour/icons/icon_tag_the_best.svg" alt="">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-top">
+                            <p class="hotel-name">Khách Sạn A&Em Signature</p>
+
+                            <div class="hotel-location">
+                                <i class="fas fa-map-pin"></i>
+                                <p class="hotel-locate">Quận 1</p>
+                            </div>
+                        </div>
+
+                            
+                            <div class="hotel-price">
+                                <div class="hotel-price--old">1.863.803đ</div>
+                                <div class="hotel-price--new">1.778.549đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hotel-item col col-4">
+                        <img src="https://tripi.vn/cdn-cgi/image/width=320/https://www.googleapis.com/download/storage/v1/b/hotel_image/o/logo%2F4%2F10976.jpg?generation=1563769073064379&alt=media" alt="" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-top">
+
+                            <p class="hotel-name">Khách sạn Sofitel Plaza Sài Gòn</p>
+
+                            <div class="hotel-location">
+                                <i class="fas fa-map-pin"></i>
+                                <p class="hotel-locate">Quận 1</p>
+                            </div>
+                        </div>
+                            
+                            <div class="hotel-price">
+                                <div class="hotel-price--old">1.863.803đ</div>
+                                <div class="hotel-price--new">1.778.549đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hotel-item col col-4">
+                        <img src="https://tripi.vn/cdn-cgi/image/width=320/https://storage.googleapis.com/hms_prod/photo/thumb/1616746505736hM/eden..png" alt="" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-top">
+
+                                
+                                <p class="hotel-name">Bluesky Serviced Apartment Airport Plaza</p>
+                                
+                                <div class="hotel-location">
+                                    <i class="fas fa-map-pin"></i>
+                                    <p class="hotel-locate">Quận Tân Bình</p>
+                                </div>
+                            </div>
+                            
+                            <div class="hotel-price">
+                                <div class="hotel-price--old">1.863.803đ</div>
+                                <div class="hotel-price--new">1.778.549đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hotel-item col col-4">
+                        <img src="https://tripi.vn/cdn-cgi/image/width=320/https://www.googleapis.com/download/storage/v1/b/tourcdn/o/photos%2FW0Z1ZGFRKL_%2Ftmp%2Fplaytemp4401775770632333474%2FmultipartBody1568277742014620000asTemporaryFile?generation=1586172074885787&alt=media" alt="" class="hotel-img">
+                        <div class="hotel-content">
+                            <div class="hotel-top">
+
+                                <p class="hotel-name">Khách Sạn Âu Lạc Charner</p>
+    
+                                <div class="hotel-location">
+                                    <i class="fas fa-map-pin"></i>
+                                    <p class="hotel-locate">Quận 1</p>
+                                </div>
+                            </div>
+
+                            
+                            <div class="hotel-price">
+                                <div class="hotel-price--old">1.863.803đ</div>
+                                <div class="hotel-price--new">1.778.549đ</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+                
+                
+                
+            </div>
+
+            <div class="frame">
+                <div class="frame-left">
+                    <p class="frame-title">Vì sao chọn <span>ShyTour?</span></p>
+                </div>
+                <div class="col col-2 frame-right">
+                    <ul class="row mr-5 frame-content">
+                        <li class="col col-3">
+                            <span class="frame-num">1.</span>
+                            <p class="frame-name">Mạng Bán tour</p>
+    
+                            <p class="frame-desc">Đầu tiên tại Việt Nam</p>
+                            <p class="frame-desc">Ứng dụng công nghệ mới nhất</p>
+                        </li>
+                        <li class="col col-3">
+                            <span class="frame-num">2.</span>
+                            <p class="frame-name">THANH TOÁN</p>
+    
+                            <p class="frame-desc">An toàn và linh hoạt</p>
+                            <p class="frame-desc">Đơn giản dễ sử dụng</p>
+                        </li>
+                        <li class="col col-3">
+                            <span class="frame-num">3.</span>
+                            <p class="frame-name">Giá Cả</p>
+    
+                            <p class="frame-desc">Luôn có mức giá tốt nhất</p>
+                            <p class="frame-desc">Bảo đảm giá tốt</p>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="row mr-5 frame-content">
+                        <li class="col col-3">
+                            <span class="frame-num">4.</span>
+                            <p class="frame-name">Sản Phẩm</p>
+    
+                            <p class="frame-desc">Đa dạng, chất lượng</p>
+                            <p class="frame-desc">Đạt chất lượng tốt nhất</p>
+                        </li>
+                        <li class="col col-3">
+                            <span class="frame-num">5.</span>
+                            <p class="frame-name">Đặt tour</p>
+    
+                            <p class="frame-desc">Dễ dàng và nhanh chóng</p>
+                            <p class="frame-desc">Đơn giản chỉ với vài bước</p>
+                        </li>
+                        <li class="col col-3">
+                            <span class="frame-num">6.</span>
+                            <p class="frame-name">Hỗ trợ</p>
+    
+                            <p class="frame-desc">Từ 08h00 - 22h00</p>
+                            <p class="frame-desc">Hotline và hỗ trợ trực tuyến</p>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+                
+                </div>
+                <hr>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <div class="container">
+
+                        <ul class="row">
+                            <li class="col col-2 contact-content ">
+                                Liên hệ
+
+                                <p class="contact-item"><i class="fas fa-map-signs"></i>156 Mậu Thân, quận Ninh Kiều, Thành Phố Cần Thơ</p>
+                                <p class="contact-item">
+                                    <i class="ion-android-call"></i>0342613187
+                                </p>
+                                <p class="contact-item">
+                                    <i class="ion-ios-email"></i>
+                                    thanhtong531@gmail.com
+                                </p>
+                            </li>
+                            <li class="col col-4 contact-content">
+                                Thông tin
+                                <div class="information">
+                                    <a href="#">Tạp chí du lịch</a>                                
+                                    <a href="#">Kinh nghiệm du lịch</a>                                
+                                </div>
+                            </li>
+                            <li class="col col-4 contact-content">
+                                NewSLetter
+                                <div class="input">
+                                    <input type="text" class="newletter">
+                                    <a href="">
+
+                                        <i class="ion-ios-email"></i>
+                                    </a>
+
+                                </div>
+                            </li>
+                            <li class="col col-4 contact-content">
+                                Mạng xã hội
+                                    <div class="social-list">
+                                        <a href="" class="social-item--fb"><i class="fab fa-facebook"></i></a>
+                                        <a href="" class="social-item--insta"><i class="fab fa-instagram-square"></i></i></a>
+                                        <a href="" class="social-item--ytb"><i class="ion-social-youtube"></i></a>
+                                        <a href="" class="social-item--twitter"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                        
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="design">Design by <a>ThanhTòng</a>.</p>
+                </footer>
+    </div>
+    <div class="modal">
+        <div class="modal-login">
+                <h2 class="modal-title">Đăng nhập</h2>
+
+                <form action="" class="modal-form--login">
+                    <input type="text" id="name" placeholder=" ">
+                        <label for="name">Tài khoản</label>
+                        <input type="password" id="password" placeholder=" ">
+                        <label for="password">Mật khẩu:</label>
+
+                </form>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
