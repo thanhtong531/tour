@@ -752,15 +752,9 @@ hr{
 
 }
 
-.input{
-    margin-top: 10px;
-    display: flex;
-}
-
 
 .input-newletter{
-    height: 30px;
-    flex: 1;
+    height: 20px;
 }
 
 
@@ -769,16 +763,14 @@ hr{
 .input i {
 
     background-color:var(--primary-color);
-    color:#fff;
-    height: 30px;
-    text-align: center;
-    display: inline-block;
-    padding: 0 10px 0 10px;
     font-size: 20px;
-    margin-left: auto;
-    flex-shrink: 1;
+    line-height: 20px;
+    margin-top: 14px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: -16px;
+    color:#fff;
     cursor: pointer;
-    
 } 
 
 .social-list{

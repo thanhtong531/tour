@@ -752,34 +752,29 @@ hr{
 
 }
 
-.input{
-    margin-top: 10px;
-    display: flex;
-}
-
 
 .input-newletter{
-    height: 30px;
-    flex: 1;
+    height: 40px;
 }
 
 
-
+/* .newletter {
+    margin-right: 4px;
+    padding: 3px;
+    margin-top: 10px;
+}
 
 .input i {
-
     background-color:var(--primary-color);
-    color:#fff;
-    height: 30px;
-    text-align: center;
+    font-size: 15px;
+    line-height: -0.3;
+    margin-top: 14px;
     display: inline-block;
-    padding: 0 10px 0 10px;
-    font-size: 20px;
-    margin-left: auto;
-    flex-shrink: 1;
+    padding: 4px 8px;
+    margin-left: -16px;
+    color:#fff;
     cursor: pointer;
-    
-} 
+} */
 
 .social-list{
     margin-top: 10px;

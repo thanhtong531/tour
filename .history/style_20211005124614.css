@@ -761,6 +761,7 @@ hr{
 .input-newletter{
     height: 30px;
     flex: 1;
+
 }
 
 
@@ -778,7 +779,12 @@ hr{
     margin-left: auto;
     flex-shrink: 1;
     cursor: pointer;
-    
+    /* font-size: 20px;
+    line-height: 20px;
+    margin-top: 14px;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer; */
 } 
 
 .social-list{

@@ -776,9 +776,14 @@ hr{
     padding: 0 10px 0 10px;
     font-size: 20px;
     margin-left: auto;
-    flex-shrink: 1;
+    flex: 1;
     cursor: pointer;
-    
+    /* font-size: 20px;
+    line-height: 20px;
+    margin-top: 14px;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer; */
 } 
 
 .social-list{
